@@ -12,7 +12,7 @@ int main() {
 
     std::cout << "Test avec '133.5.1.1': " << (IP.accept({'1','3','3','.','5','.','1','.','1'}) ? "Accepté" : "Rejeté") << std::endl;
 
-     std::cout << "Test avec '451': " << (IP.accept({'4','5','1'}) ? "Accepté" : "Rejeté") << std::endl;
+    std::cout << "Test avec '451': " << (IP.accept({'4','5','1'}) ? "Accepté" : "Rejeté") << std::endl;
     
     std::cout << "Test avec 'GET': " << (method.accept({'G','E','T'}) ? "Accepté" : "Rejeté") << std::endl;
 
