@@ -7,7 +7,7 @@ int main() {
     Automate<char> IP({'1','2','7','.','0','.','0','.','1'});
     // Création d'un automate pour reconnaître la séquence "GET|POST|DELETE|PUT"
     Automate<char> method({'G','E','T','|','P','O','S','T','|','D','E','L','E','T','E','|','P','U','T'});
-
+    Automate<char> pull({'G','E','T','|','P','O','S','T','|','D','E','L','E','T','E','|','P','U','T'});
     std::cout << "Test avec '127.0.0.1': " << (IP.accept({'1','2','7','.','0','.','0','.','1'}) ? "Accepté" : "Rejeté") << std::endl;
 
     std::cout << "Test avec '133.5.1.1': " << (IP.accept({'1','3','3','.','5','.','1','.','1'}) ? "Accepté" : "Rejeté") << std::endl;
